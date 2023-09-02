@@ -86,7 +86,7 @@ dag = DAG(
     default_args = {
         'retries': 1,
         'retry_delay': timedelta(minutes=3),
-        'on_failure_callback': slack.on_failure_callback,
+        # 'on_failure_callback': slack.on_failure_callback,
     }
 )
 

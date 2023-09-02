@@ -59,7 +59,8 @@ def load(records):
         cur.execute("COMMIT;")   # cur.execute("END;") 
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
-        cur.execute("ROLLBACK;")   
+        cur.execute("ROLLBACK;")
+	raise
     logging.info("load done")
 
 

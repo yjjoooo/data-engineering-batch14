@@ -5,7 +5,7 @@ from airflow.providers.postgres.hooks.postgres import PostgresHook
 
 from datetime import datetime
 from datetime import timedelta
-from plugins import slack
+# from plugins import slack
 
 import requests
 import logging

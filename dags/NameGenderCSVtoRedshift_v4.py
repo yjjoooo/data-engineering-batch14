@@ -11,6 +11,7 @@ import requests
 import logging
 import psycopg2
 
+from config import redshift_info
 
 
 def get_Redshift_connection(autocommit=True):
@@ -110,7 +111,7 @@ load = PythonOperator(
     task_id = 'load',
     python_callable = load,
     params = {
-        'schema': 'keeyong',   ## 자신의 스키마로 변경
+        'schema': 'joss4677',   ## 자신의 스키마로 변경
         'table': 'name_gender'
     },
     dag = dag)

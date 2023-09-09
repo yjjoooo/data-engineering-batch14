@@ -78,7 +78,7 @@ with DAG(
 ) as dag:
 
     url = Variable.get("csv_url")
-    schema = 'keeyong'   ## 자신의 스키마로 변경
+    schema = 'joss4677'   ## 자신의 스키마로 변경
     table = 'name_gender'
 
     lines = transform(extract(url))

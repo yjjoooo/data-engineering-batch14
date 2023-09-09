@@ -8,7 +8,7 @@ import requests
 import logging
 import psycopg2
 
-from ..config import redshift_info
+from config import redshift_info
 
 def get_Redshift_connection():
     host = "learnde.cduaw970ssvt.ap-northeast-2.redshift.amazonaws.com"

@@ -79,4 +79,4 @@ with DAG(
 ) as dag:
 
     results = get_historical_prices("AAPL")
-    load("keeyong", "stock_info_v2", results)
+    load("joss4677", "stock_info_v2", results)
